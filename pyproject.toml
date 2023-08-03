@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "kDbLogger"
+version = "0.0.1"
+authors = [
+  { name="Karunakar", email="karunakar.kintada@gmail.com" },
+]
+description = "The log module on python prefers files, however upon searching the internet, a solution to pass logging into DB was found. SRC:ComingSoon. this is packaged to make it available for others, credit goes to original source."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/karunakar2/kDbLogger"
+"Bug Tracker" = "https://github.com/karunakar2/kDbLogger/issues"
