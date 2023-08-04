@@ -25,7 +25,11 @@ class Crud:
         self.create_tables()
 
     def create_engine(self):
-        self.engine = create_engine(self.connection_string)
+        try:
+            self.engine = create_engine(self.connection_string, use_setinputsizes=False)
+        except Exception as er:
+            print(er)
+            self.engine = create_engine(self.connection_string)
 
     def create_session(self):
         self.session = Session(bind=self.engine)
